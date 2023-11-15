@@ -1,0 +1,58 @@
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espace entre les vidéos */
+  margin: 20px 0; /* Marge autour du conteneur des vidéos */
+}
+
+.video-frame {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Effet d'ombrage */
+  border-radius: 10px; /* Coins arrondis pour un look moderne */
+  overflow: hidden; /* Cache les débordements pour maintenir les coins arrondis */
+}
+
+.bloque{
+  background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    border-radius: 40px;
+     /* Centré avec une marge supérieure */
+
+
+    font-size: 20px;
+     /* Utilisation de Flexbox */
+
+    /* Alignement vertical des enfants */
+    width: auto; /* Largeur du conteneur */
+    height: auto; /* Hauteur automatique */
+    text-align: center;
+
+}
+.bloque h1 {
+     font-family: "Arial Black", sans-serif;
+    font-size: 40px; /* Taille de police pour un gros titre */
+    margin-bottom: 35px; /* Espace en dessous du titre */
+    letter-spacing: 1.8px;
+}
+.video
+{background-color: rgba(255, 255, 255, 1); /* Fond transparent */
+
+}
+
+.bloque p {
+
+    font-family: 'Arial', sans-serif; /* Choisissez une police élégante et lisible */
+    color: #333; /* Couleur de texte sombre pour un bon contraste */
+    font-size: 23px; /* Taille de police appropriée pour la lisibilité */
+    font-weight: bold;
+    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+    text-align: justify; /* Justifie le texte pour un aspect net */
+    margin: 10px 0; /* Marge au-dessus et en dessous de la description */
+    padding: 0 15px; /* Padding pour ne pas coller aux bords */
+}
+
+

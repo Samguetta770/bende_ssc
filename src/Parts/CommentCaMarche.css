@@ -1,0 +1,163 @@
+.ccm {
+
+    background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+    padding: 20px;
+
+    border-radius: 40px;
+     margin-top: 120px;
+    margin-left: 220px;
+    padding-left: 100px;
+    padding-top: 0px;
+    font-size: 20px;
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espacement entre les éléments enfants */
+    align-items: center; /* Alignement vertical des enfants */
+    width: 1100px; /* Largeur du conteneur */
+    height: 850px; /* Hauteur automatique */
+
+}
+
+.ccm .text-section {
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 35%; /* Moitié de la largeur pour la section de texte */
+    text-align: left; /* Texte aligné à gauche */
+
+}
+
+.ccm .image-section {
+    width: 65%; /* Moitié de la largeur pour la section d'image */
+    padding-left: 0px;
+    /* Ajoutez des styles supplémentaires pour l'image ici si nécessaire */
+}
+
+.buttonContinue {
+  margin-top: 40px;
+  background-color: #004d00; /* Une teinte de vert foncé */
+  color: white; /* Texte blanc pour un bon contraste */
+  padding: 30px 45px; /* Augmente la hauteur et la largeur du padding pour agrandir le bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 40px; /* Bordures arrondies */
+  font-size: 18px; /* Taille de police plus grande pour un bouton plus grand */
+  cursor: pointer; /* Change le curseur en main lors du survol */
+  outline: none; /* Supprime l'outline par défaut pour les boutons en focus */
+  transition: background-color 0.3s ease; /* Transition douce pour le survol */
+  display: block; /* Rend le bouton un bloc pour permettre les marges automatiques */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.buttonContinue:hover {
+  background-color: forestgreen; /* Un vert un peu plus clair pour l'effet de survol */
+  transform: scale(1.1); /* Agrandit légèrement le bouton au survol */
+}
+
+.w-12{
+
+  width:1000px;
+  height:800px;
+  margin-bottom:5px;
+}
+
+
+.ccc {
+
+    background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+
+    margin-top: 200px;
+    margin-left: 240px;
+    border-radius: 40px;
+     /* Centré avec une marge supérieure */
+    padding-right: 80px;
+    font-size: 20px;
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espacement entre les éléments enfants */
+    align-items: center; /* Alignement vertical des enfants */
+    width: 1100px; /* Largeur du conteneur */
+    height: auto; /* Hauteur automatique */
+
+}
+
+.ccc .text-section {
+    width: 35%; /* Moitié de la largeur pour la section de texte */
+    text-align: left; /* Texte aligné à gauche */
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+
+.ccc .image-section {
+    width: 65%; /* Moitié de la largeur pour la section d'image */
+    padding-right: 12px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    /* Ajoutez des styles supplémentaires pour l'image ici si nécessaire */
+}
+
+.fdp {
+
+
+    background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+    padding: 20px;
+
+    border-radius: 40px;
+     margin-top: 200px;
+    margin-left: 220px;
+    padding-left: 100px;
+    padding-right: 0px;
+    padding-top: 0px;
+    font-size: 20px;
+    display: flex; /* Utilisation de Flexbox */
+
+    align-items: center; /* Alignement vertical des enfants */
+    width: 1100px; /* Largeur du conteneur */
+    height: auto; /* Hauteur automatique */
+
+
+}
+
+.fdp .text-section {
+     /* Moitié de la largeur pour la section de texte */
+    text-align: center; /* Texte aligné à gauche */
+    padding-right: 80px;
+
+}
+
+
+
+
+.partenaire {
+
+    background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+    padding: 20px;
+
+
+     margin-top: 120px;
+
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Espacement entre les éléments enfants */
+    align-items: center; /* Alignement vertical des enfants */
+     /* Largeur du conteneur */
+    height: 400px; /* Hauteur automatique */
+    text-align: center; /* Centre le contenu */
+
+}
+
+.partenaire-logo {
+    max-width: 150px; /* Largeur maximale pour chaque logo */
+    height: auto; /* Pour maintenir le ratio d'aspect */
+    margin: 0 10px; /* Espace horizontal entre les logos */
+}
+
+
+.partenaire-logo1 {
+    max-width: 400px; /* Largeur maximale pour chaque logo */
+    height: auto; /* Pour maintenir le ratio d'aspect */
+    margin: 0 10px; /* Espace horizontal entre les logos */
+}

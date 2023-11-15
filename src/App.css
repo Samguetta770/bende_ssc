@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+
+/* Style.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Ressources/panneau-solaire-75.png'); /* Assurez-vous que le chemin est correct */
+  background-size: cover; /* S'assure que l'image couvre tout l'écran */
+  background-attachment: fixed; /* L'image de fond ne défile pas avec le contenu */
+  background-position: center center; /* Centre l'image de fond */
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-title {
+  color: black; /* Choisissez la couleur de votre titre */
+  text-align: center; /* Centre le titre */
+  margin: 0;
+  padding: 20px 0; /* Ajoutez un padding pour positionner le titre */
+  /* Ajoutez d'autres styles de texte comme la taille de police, la famille de police, etc. */
+  font-size: 2em; /* Exemple pour la taille de la police */
+  /* D'autres propriétés de style que vous souhaitez appliquer à votre titre */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

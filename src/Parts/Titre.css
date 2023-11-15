@@ -1,0 +1,114 @@
+.titre {
+  background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+  padding: 20px;
+  border: 0px solid #000; /* Bordure noire */
+  border-radius: 40px;
+  margin-right:360px;
+  margin-left: 360px;
+  align-items: center;
+}
+
+.titre h2{
+  font-family: "Arial Black", sans-serif; /* Exemple de police moderne */
+  font-weight: 0000; /* Réduit la graisse de la police */
+  font-size: 28px; /* Taille de la police plus grande */
+  margin-top : 20px;
+  margin-bottom: 20px; /* Augmente la marge en bas pour plus d'espace */
+  text-align: center; /* Centre le texte */
+  letter-spacing: 1px; /* Augmente l'espacement entre les caractères */
+  color: #333; /* Couleur du texte */
+
+
+}
+
+.ligne-sous-titre {
+  width: 850px;
+  height: 0.75px;
+  background-image: linear-gradient(to right, orange, #FF6A00 );
+  margin: 10px auto;
+}
+
+
+.titre p {
+
+  font-family: "Arial ", sans-serif; /* Exemple de police moderne */
+  font-weight: 500; /* Réduit la graisse de la police */
+  font-size: 24px; /* Taille de la police plus grande */
+  margin-top : 20px;
+  margin-bottom: 20px; /* Augmente la marge en bas pour plus d'espace */
+  text-align: center; /* Centre le texte */
+  letter-spacing: 0px; /* Augmente l'espacement entre les caractères */
+  color: #333; /* Couleur du texte */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-ca-marche h2 {
+  font-family: "Helvetica Neue", sans-serif; /* Exemple de police moderne */
+  font-weight: 400; /* Réduit la graisse de la police */
+  font-size: 28px; /* Taille de la police plus grande */
+  margin-top : 20px;
+  margin-bottom: 20px; /* Augmente la marge en bas pour plus d'espace */
+  text-align: center; /* Centre le texte */
+  letter-spacing: 1px; /* Augmente l'espacement entre les caractères */
+  color: #333; /* Couleur du texte */
+}
+
+.comment-ca-marche ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+.comment-ca-marche ul li {
+  font-family: "Helvetica Neue", sans-serif; /* Exemple de police moderne */
+  font-weight: 5000; /* Réduit la graisse de la police pour la rendre plus légère */
+  font-size: 16px; /* Taille de la police pour les éléments de la liste */
+  line-height: 2.5; /* Espacement entre les lignes */
+  margin-left: 40px; /* Marge à gauche pour le texte de la liste */
+
+  /* Style du numéro personnalisé */
+  position: relative; /* Permet de positionner le numéro personnalisé */
+}
+
+.comment-ca-marche ul li:before {
+  content: counter(list-item); /* Affiche le numéro de l'élément de liste */
+  background-color: white; /* Fond du cercle blanc */
+  color: darkgreen; /* Couleur du texte à l'intérieur du cercle */
+  border: 1px solid darkgreen; /* Contour du cercle de couleur darkgreen */
+  border-radius: 50%; /* Arrondi le coin pour créer un cercle */
+  padding: 6px; /* Espace à l'intérieur du cercle */
+  width: 20px; /* Largeur du cercle */
+  height: 20px; /* Hauteur du cercle */
+
+  align-items: center;
+  justify-content: center;
+
+
+
+  margin-right: 10px; /* Espace entre le cercle et le texte */
+  position: inherit; /* Position absolue pour le numéro */
+  left: -30px; /* Déplace le numéro vers la gauche */
+  top: 50%; /* Aligné verticalement au centre */
+  transform: translateY(-50%); /* Pour centrer verticalement */
+  font-weight: 300; /* Met en gras le numéro */
+  font-size: 14px; /* Taille de la police du numéro */
+}
+

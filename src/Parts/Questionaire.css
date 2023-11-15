@@ -1,0 +1,198 @@
+.questionaire{
+  background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
+  padding: 20px;
+  border: 0px solid #000; /* Bordure noire */
+  border-radius: 40px;
+  margin-right:300px;
+  margin-left: 300px;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+    width: 1100px; /* ou toute autre valeur appropriée */
+    height: auto; /* ou toute autre valeur appropriée */
+
+    /* Optionnel: pour gérer le contenu débordant */
+    overflow: auto;
+}
+
+
+input[type="checkbox"] {
+  appearance: none; /* Désactiver l'apparence par défaut */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px; /* Ajustez la largeur selon vos besoins */
+  height: 20px; /* Ajustez la hauteur selon vos besoins */
+  border: 2px solid #333; /* Couleur de la bordure de la case à cocher */
+  outline: none; /* Supprimer la bordure autour de la case à cocher lorsqu'elle est sélectionnée */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Afficher un curseur pointer au survol */
+}
+
+/* Styles pour la case à cocher lorsqu'elle est cochée */
+input[type="checkbox"]:checked {
+  background-color: #333; /* Couleur de fond lorsque la case à cocher est cochée */
+  border-color: #333; /* Couleur de la bordure lorsque la case à cocher est cochée */
+}
+
+/* Styles pour le style du label associé à la case à cocher */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  margin-left: 10px; /* Ajoutez un espace entre la case à cocher et le texte */
+}
+
+input[name="surfaceHabitable"]::placeholder {
+    font-weight: bold; /* Pour le rendre légèrement plus gras */
+    font-size: 16px; /* Ajustez cette valeur pour correspondre à la hauteur de votre input */
+}
+
+
+
+
+
+.questionaire select {
+
+      display: block; /* Ajoutez display: block pour forcer le select sur une nouvelle ligne */
+      width: 80%;/* Rend le select aussi large que son conteneur */
+      height: 2em; /* Augmente la hauteur pour agrandir le select */
+      font-size: 1.2em; /* Ajuste la taille du texte à l'intérieur du select */
+      margin-top: 0.5em; /* Ajoutez un peu d'espace au-dessus du select */
+      font-weight: 300
+    }
+
+
+
+
+.questionaire input{
+  width: 300px;
+  height: 2em;
+
+
+}
+
+.questionaire p{
+  font-family: "Arial Black", sans-serif; /* Exemple de police moderne */
+  font-weight: 100; /* Réduit la graisse de la police */
+  font-size: 16px; /* Taille de la police plus grande */
+
+
+}
+
+.questionaire h1{
+
+  font-family: "Arial Black", sans-serif; /* Exemple de police moderne */
+  font-weight: 100; /* Réduit la graisse de la police */
+  font-size: 22px; /* Taille de la police plus grande */
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.questionaire h2{
+  font-family: "Arial ", sans-serif; /* Exemple de police moderne */
+  font-weight: 100; /* Réduit la graisse de la police */
+  font-size: 16px; /* Taille de la police plus grande */
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.questionaire label {
+  cursor : pointer;
+  border:1px solid #ccc;
+  border-radius:8px;
+  padding:10px;
+  margin:10px;
+
+  display : flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: white;
+
+}
+
+.questionaire label:hover{
+
+  border:2px solid #000000;
+}
+
+.w-10{
+
+  width:70px;
+  height:70px;
+  margin-bottom:5px;
+}
+
+.w-11{
+  width:90px;
+  height:90px;
+  margin-bottom:5px;
+
+}
+
+.questionaire option {
+  display : flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.ma-phrase {
+    font-style: italic;
+    opacity: 0.8; /* Ajustez cette valeur pour la discrétion */
+    font-size: 13px
+}
+
+/* Italique spécifique pour "dans un département non reconnu" */
+.departement-non-reconnu {
+  font-style: italic;
+  margin-left: 1999px;
+  color : red;
+  font-size: 13px
+}
+
+
+
+.buttonContinue {
+  margin-top: 40px;
+  background-color: #004d00; /* Une teinte de vert foncé */
+  color: white; /* Texte blanc pour un bon contraste */
+  padding: 20px 40px; /* Augmente la hauteur et la largeur du padding pour agrandir le bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 20px; /* Bordures arrondies */
+  font-size: 18px; /* Taille de police plus grande pour un bouton plus grand */
+  cursor: pointer; /* Change le curseur en main lors du survol */
+  outline: none; /* Supprime l'outline par défaut pour les boutons en focus */
+  transition: background-color 0.3s ease; /* Transition douce pour le survol */
+  display: block; /* Rend le bouton un bloc pour permettre les marges automatiques */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.buttonContinue:hover {
+  background-color: forestgreen; /* Un vert un peu plus clair pour l'effet de survol */
+  transform: scale(1.1); /* Agrandit légèrement le bouton au survol */
+}
+
+
+.questionaire .buttonReturn {
+    /* Positionnement absolu */
+    top: 10px; /* Distance du haut */
+    left: 10px; /* Distance de la gauche */
+    background-color: transparent; /* Pas de couleur de fond */
+    color: #303030; /* Couleur du texte gris */
+    border: none; /* Pas de bordure */
+    padding: 10px; /* Padding autour du texte */
+    border-radius: 5px; /* Bords arrondis (optionnel car sans fond) */
+    cursor: pointer; /* Curseur en forme de main pour indiquer la cliquabilité */
+    transition: color 0.3s ease; /* Transition pour l'effet de survol */
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.questionaire .buttonReturn:hover {
+    color: #202020 ; /* Assombrit la couleur du texte au survol */
+    font-weight: bold; /* Rend le texte plus gras */
+}
