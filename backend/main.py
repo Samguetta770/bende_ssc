@@ -1,7 +1,11 @@
+import os
+import base64
+import json
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import gspread
 from gspread import Spreadsheet
+
 
 app = Flask(__name__)
 CORS(app)  # Activez CORS si nécessaire
@@ -21,7 +25,10 @@ def submit_data():
         data['revenue']
     ]
 
-    gc = gspread.service_account(filename="C:/Users/samos/Downloads/Bende_ssc/modern-ellipse-405210-24c1bc03f180.json")
+    creds_json = base64.b64decode(os.environ.get('GSPREAD_CREDENTIALS')).decode('utf-8')
+    creds_dict = json.loads(creds_json)
+    gc = gspread.service_account_from_dict(creds_dict)
+
     sh = gc.open("Bende_SSC_Lead")
     worksheet = sh.sheet1  # Accès à la première feuille
     worksheet.append_row(data_list)
