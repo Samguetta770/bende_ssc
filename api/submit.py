@@ -39,7 +39,8 @@ def submit_data(request):
     worksheet = sh.sheet1  # Accès à la première feuille
     worksheet.append_row(data_list)
 
-
-
     # Renvoyer une réponse JSON
     return data
+
+
+handler = submit_data
