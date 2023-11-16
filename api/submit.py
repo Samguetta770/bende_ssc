@@ -22,7 +22,7 @@ credentials_info = {
 
 app = Flask(__name__)
 CORS(app)  # Activez CORS si nécessaire
-@app.route('/submit', methods=['POST'])
+@app.route('/api/submit', methods=['POST'])
 def submit_data():
     data = request.json
     print(data)
