@@ -18,13 +18,6 @@ credentials_info = {
 
 
 def submit_data(request):
-    if request.method == 'OPTIONS':
-        headers = {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'POST, OPTIONS',
-            'Access-Control-Allow-Headers': 'Content-Type'
-        }
-        return {'statusCode': 204, 'headers': headers}
     # Extraction des données de la requête
     data = request.get_json()
     print(data)
@@ -41,24 +34,12 @@ def submit_data(request):
         data.get('revenue', '')
     ]
 
-    headers = {
-        'Access-Control-Allow-Origin': '*',  # Autorise toutes les origines, à ajuster selon vos besoins
-        'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',  # Méthodes autorisées
-        'Access-Control-Allow-Headers': 'Content-Type'  # En-têtes autorisés
-    }
-
-    # Utilisation des variables d'environnement pour les informations sensibles
-    # Assurez-vous de configurer ces variables dans Vercel
     gc = gspread.service_account_from_dict(credentials_info)
     sh = gc.open("Bende_SSC_Lead")
     worksheet = sh.sheet1  # Accès à la première feuille
     worksheet.append_row(data_list)
 
-    response = {
-        'statusCode': 200,
-        'body': json.dumps(data),
-        'headers': headers
-    }
+
 
     # Renvoyer une réponse JSON
-    return response
+    return data
