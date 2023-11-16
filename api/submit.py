@@ -1,6 +1,10 @@
-import json
-import gspread
 import os
+import base64
+import json
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import gspread
+from gspread import Spreadsheet
 
 credentials_info = {
     "type": "service_account",
@@ -16,22 +20,21 @@ credentials_info = {
     "universe_domain": "googleapis.com"
 }
 
-
-def submit_data(request):
-    # Extraction des données de la requête
-    data = request.get_json()
+app = Flask(__name__)
+CORS(app)  # Activez CORS si nécessaire
+@app.route('/submit', methods=['POST'])
+def submit_data():
+    data = request.json
     print(data)
-
-    # Construction de la liste de données à partir de la requête
     data_list = [
-        data.get('surfaceHabitable', ''),
-        data.get('chauffage', ''),
-        data.get('departement', ''),
-        data.get('mail', ''),
-        data.get('phone', ''),
-        data.get('surname', ''),
-        data.get('lastname', ''),
-        data.get('revenue', '')
+        data['surfaceHabitable'],
+        data['chauffage'],
+        data['departement'],
+        data['mail'],
+        data['phone'],
+        data['surname'],
+        data['lastname'],
+        data['revenue']
     ]
 
     gc = gspread.service_account_from_dict(credentials_info)
@@ -43,4 +46,3 @@ def submit_data(request):
     return data
 
 
-handler = submit_data
