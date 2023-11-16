@@ -27,7 +27,6 @@ def submit_data():
     data = request.json
     print(data)
     data_list = [
-        data['surfaceHabitable'],
         data['chauffage'],
         data['departement'],
         data['mail'],
