@@ -29,6 +29,8 @@ def submit_data():
     creds_dict = json.loads(creds_json)
     gc = gspread.service_account_from_dict(creds_dict)
 
+
+
     sh = gc.open("Bende_SSC_Lead")
     worksheet = sh.sheet1  # Accès à la première feuille
     worksheet.append_row(data_list)

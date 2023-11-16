@@ -42,7 +42,7 @@ function QuestionaireTest() {
 
         // Traitement du formulaire ici (envoi à un serveur, par exemple)
     try {
-            const response = await fetch('http://localhost:5000/submit', {
+            const response = await fetch('https://bende-ssc-lead-version-1-cpxeez0pv-samuel-guetta-s-team.vercel.app//submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
