@@ -18,6 +18,13 @@ credentials_info = {
 
 
 def submit_data(request):
+    if request.method == 'OPTIONS':
+        headers = {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type'
+        }
+        return {'statusCode': 204, 'headers': headers}
     # Extraction des données de la requête
     data = request.get_json()
     print(data)
