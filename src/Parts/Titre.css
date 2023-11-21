@@ -3,9 +3,11 @@
   padding: 20px;
   border: 0px solid #000; /* Bordure noire */
   border-radius: 40px;
-  margin-right:360px;
-  margin-left: 360px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  width: 70%;
 }
 
 .titre h2{
@@ -13,6 +15,7 @@
   font-weight: 0000; /* Réduit la graisse de la police */
   font-size: 28px; /* Taille de la police plus grande */
   margin-top : 20px;
+
   margin-bottom: 20px; /* Augmente la marge en bas pour plus d'espace */
   text-align: center; /* Centre le texte */
   letter-spacing: 1px; /* Augmente l'espacement entre les caractères */

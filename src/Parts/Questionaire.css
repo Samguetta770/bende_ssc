@@ -3,8 +3,7 @@
   padding: 20px;
   border: 0px solid #000; /* Bordure noire */
   border-radius: 40px;
-  margin-right:300px;
-  margin-left: 300px;
+  margin: 0 auto;
   font-size: 15px;
   justify-content: center;
   align-items: center;
