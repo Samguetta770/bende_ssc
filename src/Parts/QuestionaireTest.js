@@ -10,6 +10,7 @@ import PartieFin from "./QuestionaireParts/PartieFin";
 
 
 
+
 function QuestionaireTest() {
 
 
@@ -22,6 +23,7 @@ function QuestionaireTest() {
     const [phone, setPhone] = useState('');
     const [surname, setSurname] = useState('');
     const [lastname, setLastname] = useState('');
+    const KOKO = 'api/submit'
     // Ajoutez d'autres états pour les autres parties du questionnaire
 
     // ... vos autres fonctions ...
@@ -42,7 +44,7 @@ function QuestionaireTest() {
 
         // Traitement du formulaire ici (envoi à un serveur, par exemple)
     try {
-            const response = await fetch('/api/submit', {
+            const response = await fetch(KOKO, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
