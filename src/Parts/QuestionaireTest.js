@@ -42,7 +42,7 @@ function QuestionaireTest() {
 
         // Traitement du formulaire ici (envoi à un serveur, par exemple)
     try {
-            const response = await fetch('https://www.ecosolution.site/api/submit', {
+            const response = await fetch('ecosolution.site/api/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
