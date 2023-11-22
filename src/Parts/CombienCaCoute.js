@@ -6,7 +6,7 @@ function CombienCaCoute() {
     <div className="ccc" >
 
         <div className="image-section">
-            <img src={img1} className={"w-12"} alt="femme faisant des economies d'énergie"/>
+            <img src={img1} className={"w-22"} alt="femme faisant des economies d'énergie"/>
         </div>
 
         <div className={"text-section"}>

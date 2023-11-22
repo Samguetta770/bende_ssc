@@ -5,7 +5,7 @@ function FinDePage() {
   return (
     <div className="fdp" >
 
-        <div className={"text-section"}>
+        <div className={"text-section-fdp"}>
             <h1>Et maintenant ? À vous de jouer !</h1>
             <p>Grâce à notre simulateur, calculez en 2 minutes votre montant d'aides, et estimez gratuitement votre devis afin de savoir si vous pouvez beneficier du systeme solaire composé à 1 €!
 
