@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   width: 70vw; /* Largeur adaptative */
-  height: 45vw;
+  height: auto;
 
 }
 
@@ -28,7 +28,7 @@
   align-items: center;
   width: 70vw; /* Largeur adaptative */
 
-  height: 45vw;
+  height: auto ;
    /* Largeur maximale */
 }
 
