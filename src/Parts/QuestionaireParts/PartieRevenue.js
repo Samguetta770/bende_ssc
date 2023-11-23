@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Questionaire.css'
-import img1 from "../../Ressources/+50K image.png";
+import img1 from "../../Ressources/50Kimage.png";
 import img2 from "../../Ressources/25K_50K image.png";
 import img3 from "../../Ressources/25Kimage.png";
 import ProgressBar from "../../Ressources/ProgressBar";
