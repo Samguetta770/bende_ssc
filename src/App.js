@@ -9,12 +9,16 @@ import CombienCaCoute from "./Parts/CombienCaCoute";
 import Videos from "./Parts/Videos";
 import FinDePage from "./Parts/FinDePage";
 import PartenaireSection from "./Parts/PartenaireSection";
+
+import { Analytics } from '@vercel/analytics/react';
+
 function App() {
   return (
       <body>
        <Header/>
        <Titre/> <br/><br/>
        <QuestionaireTest/>
+       <Analytics/>
        <CommentCaMarche/>
        <CombienCaCoute/>
        <Videos/>

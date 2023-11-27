@@ -86,20 +86,42 @@
 
 
 
-.ccm .text-section, .ccc .text-section  {
+.ccm .text-section{
   width: 35%;
   text-align: left;
   margin: 0px;
 }
+
+
+
+
+
+
+
+
 
 .ccm .image-section {
   width: 55%;
   padding: 0 0px;
 }
 
+
+
+
+.ccc .text-section  {
+  width: 35%;
+  text-align: left;
+  margin-left: 20px;
+  padding-left: 4rem;
+}
+
+
+
+
+
 .ccc .image-section {
-  width: 55%;
-  padding: 0 0px;
+  width: 40%;
+
 }
 
 
@@ -134,7 +156,8 @@
 .w-22 {
   width: 55vw;
   margin-left: 0vw;
-  margin-right: 2vw;
+  margin-right: 3vw;
+  padding-right: 3rem;
   height: auto;
   margin-bottom: 5px;
 }
