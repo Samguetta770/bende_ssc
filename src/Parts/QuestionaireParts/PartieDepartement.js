@@ -9,11 +9,15 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
 
 
     const handleDepartementChange = (event) => {
-    setDepartement(event.target.value);
-    if (event.target.value) {
+    let depValue = event.target.value;
 
-    }
-};
+        // Extraire les deux premiers chiffres si la longueur est de 5
+        if (depValue.length === 5) {
+
+        }
+
+        setDepartement(depValue);
+    };
 
     const validateAndContinue = () => {
         if (departement) {
@@ -80,10 +84,11 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
                                           // Ajoutez ici d'autres styles si nécessaire
                                       }}
                             />
+
                            {departement && (
                                <h4 className="ma-phrase">
                                  La maison à prendre en charge se trouve <span
-                                   className="{departements[departementNum] ? '' : 'departement-non-reconnu'}">{departements[departement] || "dans un département non reconnu"}</span>.
+                                   className="{departements[departementNum] ? '' : 'departement-non-reconnu'}">{departements[departement.substring(0,2)] || "dans un département non reconnu"}</span>.
                                </h4>
                           )}
                         </div>

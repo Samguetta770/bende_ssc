@@ -1,6 +1,9 @@
 
 
+@media screen and (min-width: 768px) {
+    .header{transform: skewY(-1.5deg);}
 
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -10,7 +13,7 @@
     background-position: 0% 100%;
     background-repeat: no-repeat;
     padding: 0px;
-    transform: skewY(-1.5deg);
+
     transform-origin: top left;
     margin-top: 0px;
     height: 9vw;
@@ -66,21 +69,28 @@ margin-right: 0px;
   .header {
     height: auto; /* Ajustez la hauteur pour les petits écrans */
     transform: skewY(0deg); /* Optionnel, supprime l'inclinaison sur les petits écrans */
-    padding: 10px; /* Ajoutez un peu de padding pour ne pas couper le contenu */
+    /* Ajoutez un peu de padding pour ne pas couper le contenu */
   }
     .logo {
-        max-height: 7em; /* Ajustez la taille du logo principal sur petits écrans */
-        margin-right: 5em;
+        height: 8em; /* Ajustez la taille du logo principal sur petits écrans */
+        margin-right: 1.5em;
     }
-    .partner-logo, .partner-logo-1 {
-        max-height: 3em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
-        margin-left: 1em;
-        margin-right :0.7em;
+    .partner-logo  {
+        height: 5em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
+        margin-left: 0em;
+        margin-right :0em;
     }
+
+    .partner-logo-1 {
+        height: 6em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
+        margin-left: 0em;
+        margin-right :0em;
+    }
+
      .partner-logo-3 {
-        max-height: 1.8em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
-        margin-left: 1em;
-        margin-right :3em;
+        max-height: 2.5em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
+        margin-left: 0em;
+        margin-right :0em;
         margin-bottom: 0.8em;
     }
   /* Autres

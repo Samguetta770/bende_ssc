@@ -5,7 +5,7 @@ import '../Questionaire.css'
 const PartieFin =(partieFormulaire)=>{
     return (
         <div >
-            <div className={"questionaire"} style={{height:"auto",marginRight:"400px"}}>
+            <div className={"questionaire"} style={{height:"auto"}}>
             <h1 style={{fontSize:"28px"}}>Demande de devis soumise avec succès !</h1>
 
             <h2 style={{fontSize:"20px"}}>Merci !

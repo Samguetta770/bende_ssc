@@ -37,7 +37,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
 
             <form  className="questionaire" >
-                <p style={{fontSize:"2em",fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
+                <p className={"pp"} style={{fontSize:"2em",fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
                 <ProgressBar step={partieFormulaire} totalSteps={5} />
                   <question>
 

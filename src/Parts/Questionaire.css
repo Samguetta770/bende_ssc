@@ -192,6 +192,11 @@
     font-size: 0.5em;
   }
 
+  .pp{
+    font-size: 1em;
+  }
+
+
   .buttonContinue, .questionaire .buttonReturn {
     font-size: 0.9em;
     padding: 15px 35px;

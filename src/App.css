@@ -1,12 +1,19 @@
+@media screen and (min-width: 768px) {
+
+body {
+    background-image: url('Ressources/panneau-solaire-75.png');
+    background-size: cover; /* S'assure que l'image couvre tout l'écran */
+    background-attachment: fixed; /* L'image de fond ne défile pas avec le contenu */
+    background-position: center center; /* Centre l'image de fond */
+  }
+}
+
+
 
 /* Style.css */
 body {
   margin: 0;
   padding: 0;
-  background-image: url('Ressources/panneau-solaire-75.png'); /* Assurez-vous que le chemin est correct */
-  background-size: cover; /* S'assure que l'image couvre tout l'écran */
-  background-attachment: fixed; /* L'image de fond ne défile pas avec le contenu */
-  background-position: center center; /* Centre l'image de fond */
   height: 100%;
   width: 100%;
 }
