@@ -49,9 +49,19 @@
 
 @media (max-width: 600px) {
   .video-container {
-    flex-wrap: wrap; /* Permet le passage à la ligne sur petits écrans */
+    flex-wrap: wrap; /* Bonne approche */
+
+  }
+  .bloque{
+    width: 90%;
   }
 
   .video-frame {
-    max-width: 80vw;
-  }}
+    width: 90%; /* Utilisez une largeur maximale plus grande */
+    margin: 0 auto; /* Centre les vidéos dans leur conteneur */
+  }
+
+  .videomami {
+    width: 100%; /* Assurez-vous que le conteneur parent occupe toute la largeur */
+  }
+}

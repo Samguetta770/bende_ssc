@@ -21,3 +21,9 @@ body {
   /* D'autres propriétés de style que vous souhaitez appliquer à votre titre */
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background-color: lightskyblue;
+  }
+}
+

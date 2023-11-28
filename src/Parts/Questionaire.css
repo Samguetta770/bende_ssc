@@ -175,16 +175,21 @@
 @media (max-width: 600px) {
   .questionaire {
     padding: 10px;
-    max-width: 90vw;
+    width: 90vw;
   }
+
+
 
   .questionaire input, .questionaire select, .questionaire label {
     width: 100%;
     max-width: 100%;
   }
 
-  .questionaire h1, .questionaire h2, .questionaire p {
+  .questionaire h1, .questionaire h2{
     font-size: 0.9em;
+  }
+   .questionaire p {
+    font-size: 0.5em;
   }
 
   .buttonContinue, .questionaire .buttonReturn {

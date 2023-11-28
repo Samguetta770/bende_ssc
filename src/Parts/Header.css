@@ -59,3 +59,30 @@ margin-right: 0px;
     margin-top: 2.19em; /* Remplace 35px */
     margin-right: 2.8em; /* Remplace 45px */
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: auto; /* Ajustez la hauteur pour les petits écrans */
+    transform: skewY(0deg); /* Optionnel, supprime l'inclinaison sur les petits écrans */
+    padding: 10px; /* Ajoutez un peu de padding pour ne pas couper le contenu */
+  }
+    .logo {
+        max-height: 7em; /* Ajustez la taille du logo principal sur petits écrans */
+        margin-right: 5em;
+    }
+    .partner-logo, .partner-logo-1 {
+        max-height: 3em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
+        margin-left: 1em;
+        margin-right :0.7em;
+    }
+     .partner-logo-3 {
+        max-height: 1.8em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
+        margin-left: 1em;
+        margin-right :3em;
+        margin-bottom: 0.8em;
+    }
+  /* Autres
+  /* Autres ajustements spécifiques pour les logos et éléments dans le header */
+}

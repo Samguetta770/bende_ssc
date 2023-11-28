@@ -37,7 +37,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
 
             <form  className="questionaire" >
-                <p style={{fontSize:"2em",color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
+                <p style={{fontSize:"2em",fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
                 <ProgressBar step={partieFormulaire} totalSteps={5} />
                   <question>
 
@@ -47,7 +47,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
                               <label className ="option">
 
                                     <img className='w-10' src={img1} alt ="date de la maison économie d'énergie pompe a chaleur"/>
-                                    <p>Moins de 2 ans</p>
+                                    <p2 style={{textAlign:"center",fontWeight: "bold" }}>Moins de 2 ans</p2>
                                     <input
                                       type="radio"
                                       name={"ageMaison"}
@@ -62,7 +62,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
                               <label className ="option">
                                     <img className='w-10' src={img1} alt={"aide état économie d'énergie pompe a chaleur devis gratuit"}/>
-                                    <p>Entre 2 ans et 15 ans</p>
+                                    <p2 style={{textAlign:"center",fontWeight: "bold" }}>Entre 2 ans et 15 ans</p2>
                                     <input
                                       type="radio"
                                       name={"ageMaison"}
@@ -76,7 +76,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
                               <label className ="option">
                                     <img className='w-10' src={img1} alt={"pompe a chaleur panneaux solaire aide gouvernement réduction"}/>
-                                    <p>Plus de 15 ans</p>
+                                    <p2 style={{textAlign:"center",fontWeight: "bold" }}>Plus de 15 ans</p2>
                                     <input
                                       type="radio"
                                       value="Plus de 15 ans"

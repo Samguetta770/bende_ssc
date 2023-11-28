@@ -122,6 +122,7 @@
 .ccc .image-section {
   width: 40%;
 
+
 }
 
 
@@ -154,8 +155,8 @@
 }
 
 .w-22 {
-  width: 55vw;
-  margin-left: 0vw;
+  width: 40vw;
+  margin-left: 3vw;
   margin-right: 3vw;
   padding-right: 3rem;
   height: auto;
@@ -173,14 +174,15 @@
 }
 
 @media (max-width: 768px) {
-  .ccm, .ccc, .fdp, .partenaire {
+  .ccm{
     flex-direction: column;
-    width: 90vw;
+    width: 90%;
+    padding :1vw;
   }
 
-  .ccm .text-section, .ccc .text-section,
-  .ccm .image-section, .ccc .image-section {
-    width: 100%;
+  .ccm .text-section,
+  .ccm .image-section {
+    width: 90%;
     margin: 10px 0;
   }
 
@@ -189,6 +191,66 @@
   }
 
   .w-12 {
-    width: 90vw;
+    width: 80vw;
   }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .partenaire {
+    flex-direction: column; /* Empilez les éléments verticalement */
+    align-items: center; /* Centrez les éléments */
+    padding: 1rem; /* Réduisez le padding */
+    margin-top: 2rem; /* Ajustez la marge supérieure */
+    width: 90%;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    border-radius: 40px;
+  }
+
+  .partenaire-logo, .partenaire-logo1 {
+    max-width: 80px; /* Réduisez la taille des logos */
+    margin: 5px 0; /* Ajustez la marge autour des logos */
+  }
+
+  .partenaire-logo1 {
+    max-width: 150px; /* Taille ajustée pour le logo plus grand */
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .text-section-fdp h1 {
+    font-size: 1.8em; /* Taille ajustée pour petits écrans */
+  }
+
+  .text-section-fdp p {
+    font-size: 1em; /* Taille ajustée pour petits écrans */
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .ccc {
+    flex-direction: column; /* Empiler verticalement */
+    width: 90%; /* Ajuster la largeur totale */
+    align-items: center; /* Centrer les éléments */
+    padding: 1vw;
+  }
+
+  .ccc .image-section, .ccc .text-section {
+    width: 90%; /* Utiliser toute la largeur disponible */
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center; /* Centrer le texte pour la section de texte */
+  }
+.ccm .text-section{
+
+  text-align: center;
+
+}
+
+
 }
