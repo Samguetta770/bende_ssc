@@ -50,7 +50,7 @@
 }
 
 .text-section-fdp {
-  width: 70%;
+  width: 80%;
   text-align: center;
   margin: 1vw;
 }
@@ -174,83 +174,95 @@
 }
 
 @media (max-width: 768px) {
-  .ccm{
-    flex-direction: column;
-    width: 90%;
-    padding :1vw;
-  }
-
-  .ccm .text-section,
-  .ccm .image-section {
-    width: 90%;
-    margin: 10px 0;
-  }
-
-  .buttonContinue {
-    padding: 1rem 1.5rem;
-  }
-
-  .w-12 {
-    width: 80vw;
-  }
-}
 
 
 
-
-@media screen and (max-width: 600px) {
-  .partenaire {
-    flex-direction: column; /* Empilez les éléments verticalement */
-    align-items: center; /* Centrez les éléments */
-    padding: 1rem; /* Réduisez le padding */
-    margin-top: 2rem; /* Ajustez la marge supérieure */
-    width: 90%;
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
-    border-radius: 40px;
-  }
-
-  .partenaire-logo, .partenaire-logo1 {
-    max-width: 80px; /* Réduisez la taille des logos */
-    margin: 5px 0; /* Ajustez la marge autour des logos */
-  }
-
-  .partenaire-logo1 {
-    max-width: 150px; /* Taille ajustée pour le logo plus grand */
-  }
-}
+      .w-12 {
+        width: 70vw;
+        margin-top: 0.6em;
+      }
 
 
-@media screen and (max-width: 600px) {
-  .text-section-fdp h1 {
-    font-size: 1.8em; /* Taille ajustée pour petits écrans */
-  }
 
-  .text-section-fdp p {
-    font-size: 1em; /* Taille ajustée pour petits écrans */
-  }
-}
+      .partenaire {
+        flex-direction: column; /* Empilez les éléments verticalement */
+        align-items: center; /* Centrez les éléments */
+        padding: 1rem; /* Réduisez le padding */
+        margin-top: 2rem; /* Ajustez la marge supérieure */
+        width: 90%;
+        font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+        border-radius: 40px;
+      }
 
+      .partenaire-logo, .partenaire-logo1 {
+        max-width: 80px; /* Réduisez la taille des logos */
+        margin: 5px 0; /* Ajustez la marge autour des logos */
+      }
 
-@media screen and (max-width: 600px) {
-  .ccc {
-    flex-direction: column; /* Empiler verticalement */
-    width: 90%; /* Ajuster la largeur totale */
-    align-items: center; /* Centrer les éléments */
-    padding: 1vw;
-  }
-
-  .ccc .image-section, .ccc .text-section {
-    width: 90%; /* Utiliser toute la largeur disponible */
-    margin-left: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: center; /* Centrer le texte pour la section de texte */
-  }
-.ccm .text-section{
-
-  text-align: center;
-
-}
+      .partenaire-logo1 {
+        max-width: 150px; /* Taille ajustée pour le logo plus grand */
+      }
 
 
-}
+
+
+      .text-section-fdp h1 {
+        font-size: 1.2em; /* Taille ajustée pour petits écrans */
+      }
+
+      .text-section-fdp p {
+        font-size: 0.8em; /* Taille ajustée pour petits écrans */
+      }
+
+
+
+
+      .ccc {
+        flex-direction: column; /* Empiler verticalement */
+        width: 90%; /* Ajuster la largeur totale */
+        align-items: center; /* Centrer les éléments */
+        padding: 1vw;
+        font-size: 1.2em;
+      }
+
+      .ccc .image-section, .ccc .text-section {
+        width: 90%; /* Utiliser toute la largeur disponible */
+        margin-left: 0;
+        font-size: 0.8em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center; /* Centrer le texte pour la section de texte */
+      }
+      .w-22{
+        width: 70vw;
+      }
+
+
+
+
+      .ccm {
+        flex-direction: column; /* Empiler verticalement */
+        width: 90%; /* Ajuster la largeur totale */
+        align-items: center; /* Centrer les éléments */
+        padding: 1vw;
+        font-size: 1.2em;
+      }
+
+
+      .ccm .image-section, .ccm .text-section {
+        width: 90%; /* Utiliser toute la largeur disponible */
+        margin-left: 0;
+        font-size: 0.8em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center; /* Centrer le texte pour la section de texte */
+      }
+      .buttonContinue {
+        font-size: 1em;}
+      .text-section-fdp .buttonContinue{
+       font-size: 1em;
+      }
+    }
+
+
+

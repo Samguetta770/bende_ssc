@@ -52,6 +52,7 @@
   font-size: 1.2em;
   margin-top: 0.5em;
   font-weight: 300;
+
 }
 
 .questionaire input, .questionaire select, .questionaire label {
@@ -63,7 +64,7 @@
 .questionaire p {
   font-family: "Arial Black", sans-serif;
   font-weight: 100;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .questionaire h1 {
@@ -187,13 +188,15 @@
 
   .questionaire h1, .questionaire h2{
     font-size: 0.9em;
+    font-weight: bold;
   }
    .questionaire p {
-    font-size: 0.5em;
+    font-size: 1em;
+     font-weight: bold;
   }
 
   .pp{
-    font-size: 1em;
+    font-size: 13.5em;
   }
 
 

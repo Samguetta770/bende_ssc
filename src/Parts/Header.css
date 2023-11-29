@@ -1,6 +1,6 @@
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 778px) {
     .header{transform: skewY(-1.5deg);}
 
 }
@@ -16,17 +16,17 @@
 
     transform-origin: top left;
     margin-top: 0px;
-    height: 9vw;
+    height: 100%;
     width: 100%;
-margin-right: 0px;
+    margin-right: 0px;
 }
 .logo {
   transform: skewY(1.5deg); /* Contre-inclinez le logo pour annuler l'effet */
-  height: 13em; /* Taille classique pour un logo */
+  height: 10em; /* Taille classique pour un logo */
   width: auto; /* Largeur automatique basée sur le ratio de l'image */
    /* Positionnement absolu par rapport à l'élément parent */
   top: 0px; /* Espace du haut de la page */
-  left: 10px; /* Espace de la gauche de la page */
+  left: 5em; /* Espace de la gauche de la page */
 }
 
 .partner-logos {
@@ -37,9 +37,9 @@ margin-right: 0px;
     margin-left: 0.8vw; /* Déjà en unités relatives */
     transform: skewY(1.5deg);
     width: auto;
-    max-height: 6.25em; /* Remplace 100px, en supposant une taille de police de base de 16px */
-    margin-bottom: 0.3em; /* Remplace 5px */
-    margin-top: 1.56em; /* Remplace 25px */
+    max-height: 4.25em; /* Remplace 100px, en supposant une taille de police de base de 16px */
+    margin-bottom: 0em; /* Remplace 5px */
+    margin-top: 0em; /* Remplace 25px */
     margin-right: 2.8em; /* Remplace 45px, ajustez selon la taille de police de base */
 }
 
@@ -47,9 +47,9 @@ margin-right: 0px;
     margin-left: 0.625em; /* Remplace 10px */
     transform: skewY(1.5deg);
     width: auto;
-    max-height: 16.25em; /* Remplace 260px */
-    margin-bottom: 0.3em; /* Remplace 5px */
-    margin-top: 1.56em; /* Remplace 25px */
+    max-height: 9.25em; /* Remplace 260px */
+    margin-bottom: 0em; /* Remplace 5px */
+    margin-top: 0em; /* Remplace 25px */
     margin-right: 1.56em; /* Remplace 25px */
 }
 
@@ -57,9 +57,9 @@ margin-right: 0px;
     margin-left: 1.875em; /* Remplace 30px */
     transform: skewY(1.5deg);
     width: auto;
-    max-height: 6.25em; /* Remplace 100px */
+    max-height: 4.25em; /* Remplace 100px */
     margin-bottom: 0px;
-    margin-top: 2.19em; /* Remplace 35px */
+    margin-top: 0em; /* Remplace 35px */
     margin-right: 2.8em; /* Remplace 45px */
 }
 
@@ -72,19 +72,21 @@ margin-right: 0px;
     /* Ajoutez un peu de padding pour ne pas couper le contenu */
   }
     .logo {
-        height: 8em; /* Ajustez la taille du logo principal sur petits écrans */
+        height: 6em; /* Ajustez la taille du logo principal sur petits écrans */
         margin-right: 1.5em;
     }
     .partner-logo  {
         height: 5em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
         margin-left: 0em;
         margin-right :0em;
+        transform: skewY(0deg);
     }
 
     .partner-logo-1 {
         height: 6em; /* Réduisez davantage la taille des logos partenaires sur petits écrans */
         margin-left: 0em;
         margin-right :0em;
+        transform: skewY(0deg);
     }
 
      .partner-logo-3 {
@@ -92,6 +94,7 @@ margin-right: 0px;
         margin-left: 0em;
         margin-right :0em;
         margin-bottom: 0.8em;
+         transform: skewY(0deg);
     }
   /* Autres
   /* Autres ajustements spécifiques pour les logos et éléments dans le header */

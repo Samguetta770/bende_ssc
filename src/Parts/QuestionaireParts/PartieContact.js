@@ -71,7 +71,7 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
 
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: "50px" }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
             <form className="questionaire" >
             <ProgressBar step={partieFormulaire} totalSteps={5} />
@@ -79,17 +79,29 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
           <question >
                 <h1 >Coordonnées de Contact </h1>
                 <h2>Pour garantir un suivi personnalisé et sécurisé, nous avons besoin de vos coordonnées de contact.</h2>
+ <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: "1vw",
+    width: '100%', // Prendre toute la largeur
+     flexDirection: 'column',
+  }}>
 
-
-
+<div style={{
+      display: 'flex',
+      flexDirection: 'row',
+      width: '100%',
+      marginRight:'5vw',
+      alignItems: 'center' ,
+    }}>
 
                 <div style={{
                                         display: 'flex',
                                         flexDirection: 'column', // Changez la direction de flex en colonne
                                         alignItems: 'flex-start', // Alignez les éléments au début
                                         justifyContent: 'center',
-                                        paddingTop: "50px",
-                                        width: '80%', // Définissez une largeur pour aligner les éléments à l'intérieur
+                                        paddingTop: "0px",
+                                        width: '100%', // Définissez une largeur pour aligner les éléments à l'intérieur
                                         marginLeft: 'auto', // Ces deux propriétés centrent la div elle-même
                                         marginRight: 'auto'
                                     }}>
@@ -110,7 +122,7 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                                   border: '1px solid #ccc',  // Couleur et style de bordure
                                   borderRadius: '4px', // Bords arrondis
                                   fontWeight:'bold',
-                                  marginBottom:"0px"
+
                                   // Ajoutez ici d'autres styles si nécessaire
                               }}
                     />
@@ -124,8 +136,8 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                                         flexDirection: 'column', // Changez la direction de flex en colonne
                                         alignItems: 'flex-start', // Alignez les éléments au début
                                         justifyContent: 'center',
-                                        paddingTop: "15px",
-                                        width: '80%', // Définissez une largeur pour aligner les éléments à l'intérieur
+                                        paddingTop: "0px",
+                                        width: '100%', // Définissez une largeur pour aligner les éléments à l'intérieur
                                         marginLeft: 'auto', // Ces deux propriétés centrent la div elle-même
                                         marginRight: 'auto'
                                     }}>
@@ -149,7 +161,17 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                     />
                 </div>
                 <br/> <br/>
-                <h4 style ={{fontSize: "11px", fontStyle: "italic",textAlign: "center"}}>Nous ne réalisons aucun démarchage téléphonique et vous rappelons que, conformément à l’article L.223-2 du Code de la consommation,<br/> vous avez le droit de vous inscrire gratuitement sur une liste d’opposition au démarchage téléphonique.</h4>
+
+
+</div>
+            <div style={{
+                          display: 'flex',
+                          flexDirection: 'row',
+                          width: '100%',
+                          paddingTop:"0.3vw"// Largeur de la colonne
+                        }}>
+
+
 
 
               <div style={{
@@ -157,8 +179,8 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                                         flexDirection: 'column', // Changez la direction de flex en colonne
                                         alignItems: 'flex-start', // Alignez les éléments au début
                                         justifyContent: 'center',
-                                        paddingTop: "20px",
-                                        width: '80%', // Définissez une largeur pour aligner les éléments à l'intérieur
+                                        paddingTop: "0px",
+                                        width: '100%', // Définissez une largeur pour aligner les éléments à l'intérieur
                                         marginLeft: 'auto', // Ces deux propriétés centrent la div elle-même
                                         marginRight: 'auto'
                                     }}>
@@ -186,8 +208,8 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                                         flexDirection: 'column', // Changez la direction de flex en colonne
                                         alignItems: 'flex-start', // Alignez les éléments au début
                                         justifyContent: 'center',
-                                        paddingTop: "15px",
-                                        width: '80%', // Définissez une largeur pour aligner les éléments à l'intérieur
+                                        paddingTop: "0px",
+                                        width: '100%', // Définissez une largeur pour aligner les éléments à l'intérieur
                                         marginLeft: 'auto', // Ces deux propriétés centrent la div elle-même
                                         marginRight: 'auto'
                                     }}>
@@ -211,10 +233,13 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                     />
                 </div>
 
+</div>
+ </div>
+
+                              <h4 style ={{fontSize: "11px", fontStyle: "italic",textAlign: "center"}}>Nous ne réalisons aucun démarchage téléphonique et vous rappelons que, conformément à l’article L.223-2 du Code de la consommation,<br/> vous avez le droit de vous inscrire gratuitement sur une liste d’opposition au démarchage téléphonique.</h4>
 
 
-
-              <button type="button"
+              <button type="submit"
                       className={"buttonContinue"}
                       onClick={validateAndContinue}
                       disabled={isButtonDisabled}

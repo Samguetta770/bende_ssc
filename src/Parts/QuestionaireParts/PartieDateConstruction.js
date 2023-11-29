@@ -19,6 +19,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
         if (dateConstruction) {
             // Si la surface est saisie, continuer
             handleNextPart();
+
         } else {
             // Sinon, afficher le message d'erreur
 
@@ -34,10 +35,10 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
 
             <form  className="questionaire" >
-                <p className={"pp"} style={{fontSize:"2em",fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
+                <p className={"pp"} style={{fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
                 <ProgressBar step={partieFormulaire} totalSteps={5} />
                   <question>
 
@@ -98,6 +99,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
                             backgroundColor: isButtonDisabled ? '#ccc' : '', // Grisé si désactivé
                             // Autres styles
                                  }}
+
                        >Continuer</button>
                   </question>
             </form>

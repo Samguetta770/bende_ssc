@@ -42,7 +42,7 @@
   font-weight: bold;
 }
 .videomami{
-  background-color: rgba(255, 255, 255, 0.70)
+  background-color: rgba(255, 255, 255, 0.70);
 
 
 }
@@ -52,6 +52,16 @@
     flex-wrap: wrap; /* Bonne approche */
 
   }
+
+  .bloque h1 {
+  font-size: 1.6rem;
+
+}
+
+.bloque p {
+  font-size: 0.8rem;
+
+}
   .bloque{
     width: 90%;
   }
@@ -63,5 +73,6 @@
 
   .videomami {
     width: 100%; /* Assurez-vous que le conteneur parent occupe toute la largeur */
+    margin-bottom: 12.5vw;
   }
 }

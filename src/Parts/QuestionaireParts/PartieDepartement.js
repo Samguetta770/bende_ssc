@@ -47,10 +47,10 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
         <form className="questionaire" >
             <ProgressBar step={partieFormulaire} totalSteps={5} />
-            <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+            <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
                   <question >
                         <h1 >Dans quel département se situe le logement concerné par les travaux ?</h1>
                         <h2>Le montant de vos aides peut varier en fonction de votre localisation.</h2>
@@ -92,7 +92,7 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
                                </h4>
                           )}
                         </div>
-                      <button type="button"
+                      <button type="submit"
                       className={"buttonContinue"}
                       onClick={validateAndContinue}
                       disabled={isButtonDisabled}

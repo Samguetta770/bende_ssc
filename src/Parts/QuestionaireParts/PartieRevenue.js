@@ -42,12 +42,12 @@ const PartieRevenue = ({ revenue,setRevenue, handleNextPart ,handlePreviousPart,
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
 
             <form className="questionaire" >
                 <ProgressBar step={partieFormulaire} totalSteps={6} />
 
-                <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+                <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
           <question>
             <h1 >À combien s'élève le revenu total de votre foyer fiscal ?</h1>
               <h2>Le revenu fiscal de référence est utilisé pour calculer le montant de vos aides au plus juste.</h2>

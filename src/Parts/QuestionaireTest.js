@@ -91,10 +91,12 @@ function QuestionaireTest() {
   // ... vos autres fonctions ...
   const handleNextPart = () => {
   setPartieFormulaire(partieFormulaire + 1);
+  document.getElementById('debutForm').scrollIntoView();
   // Ajoutez ici d'autres actions si nécessaire
                                 };
   const handlePreviousPart = () => {
   setPartieFormulaire(partieFormulaire - 1);
+  document.getElementById('debutForm').scrollIntoView();
   // Ajoutez ici d'autres actions si nécessaire
                                 };
 
