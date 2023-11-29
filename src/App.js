@@ -2,7 +2,7 @@
 import './App.css';
 import Header from "./Parts/Header";
 import Titre from "./Parts/Titre";
-
+import FranceMap from "./Parts/FranceMap";
 import QuestionaireTest from "./Parts/QuestionaireTest";
 import CommentCaMarche from "./Parts/CommentCaMarche";
 import CombienCaCoute from "./Parts/CombienCaCoute";
@@ -21,6 +21,7 @@ function App() {
        <Analytics/>
        <CommentCaMarche/>
        <CombienCaCoute/>
+
        <Videos/>
        <FinDePage/>
        <PartenaireSection/>

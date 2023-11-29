@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import '../Questionaire.css'
 import img1 from "../../Ressources/schedule.png";
 import ProgressBar from "../../Ressources/ProgressBar";
@@ -29,7 +30,21 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
     const isButtonDisabled = !dateConstruction;
 
 
+    useEffect(() => {
+      const script = document.createElement('script');
+      script.src = "https://www.googletagmanager.com/gtag/js?id=AW-11421461091";
+      script.async = true;
+      document.body.appendChild(script);
 
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'AW-11421461091');
+
+      return () => {
+        document.body.removeChild(script);
+      }
+    }, []);
 
 
 
@@ -103,6 +118,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
                        >Continuer</button>
                   </question>
             </form>
+
         </div>
     );
 };

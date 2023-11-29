@@ -65,6 +65,7 @@ function QuestionaireTest() {
         }
 
         console.log(formObject);
+    document.getElementById('debutForm').scrollIntoView();
 };
 
 
