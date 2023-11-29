@@ -6,7 +6,7 @@ const ProgressBar = ({ step, totalSteps }) =>  {
     let message;
     if (step === 1 ) {
         message = "La barre de chargement indique votre progression dans le formulaire.";
-    } else if (step === 2 || step === 3) {
+    } else if (step === 2 ) {
         message = "Vous êtes déjà à la moitié !";
     } else {
         message = "Bravo, vous avez pratiquement fini !";

@@ -32,12 +32,12 @@ function QuestionaireTest() {
         const formObject = {
 
             chauffage,
-            departement,
+            dateConstruction,
             mail,
             phone,
             surname,
             lastname,
-            revenue,
+
             // Ajoutez d'autres clés pour les autres réponses
         };
         console.log(formObject);
@@ -93,6 +93,9 @@ function QuestionaireTest() {
   const handleNextPart = () => {
   setPartieFormulaire(partieFormulaire + 1);
   document.getElementById('debutForm').scrollIntoView();
+
+
+
   // Ajoutez ici d'autres actions si nécessaire
                                 };
   const handlePreviousPart = () => {
@@ -123,25 +126,8 @@ function QuestionaireTest() {
           partieFormulaire={partieFormulaire}
         />
       )}
-      {partieFormulaire === 3 && (
-        <PartieDepartement
-          departement={departement}
-          setDepartement={setDepartement}
-          handleNextPart={handleNextPart}
-          handlePreviousPart={handlePreviousPart}
-          partieFormulaire={partieFormulaire}
-        />
-      )}
-      {partieFormulaire === 4 && (
-        <PartieRevenue
-        revenue={revenue}
-        setRevenue={setRevenue}
-        handleNextPart={handleNextPart}
-        handlePreviousPart={handlePreviousPart}
-        partieFormulaire={partieFormulaire}
-        />
-      )}
-      {partieFormulaire===5 && (
+
+      {partieFormulaire===3 && (
         <PartieContact
         mail={mail}
         setMail={setMail}
@@ -161,7 +147,7 @@ function QuestionaireTest() {
 
       )}
 
-        {partieFormulaire===6&&(
+        {partieFormulaire===4&&(
         <PartieFin
         partieFormulaire={partieFormulaire}/>)}
 

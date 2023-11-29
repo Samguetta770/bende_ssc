@@ -74,7 +74,7 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
             <form className="questionaire" >
-            <ProgressBar step={partieFormulaire} totalSteps={5} />
+            <ProgressBar step={partieFormulaire} totalSteps={3} />
             <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
           <question >
                 <h1 >Coordonnées de Contact </h1>

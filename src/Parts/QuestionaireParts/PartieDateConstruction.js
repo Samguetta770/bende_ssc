@@ -49,12 +49,15 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
 
 
+
+
     return (
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
 
+
             <form  className="questionaire" >
                 <p className={"pp"} style={{fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
-                <ProgressBar step={partieFormulaire} totalSteps={5} />
+                <ProgressBar step={partieFormulaire} totalSteps={3} />
                   <question>
 
                         <h1 >Sélectionnez de quand date la construction du logement <br/>concerné par les travaux ?</h1>

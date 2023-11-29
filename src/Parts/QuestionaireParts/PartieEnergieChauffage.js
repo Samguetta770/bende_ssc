@@ -45,7 +45,7 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' ,alignItems:"column"}}>
 
             <form className="questionaire" >
-                <ProgressBar step={partieFormulaire} totalSteps={5} />
+                <ProgressBar step={partieFormulaire} totalSteps={3} />
                 <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
           <question>
             <h1 >Quelle est l’énergie de chauffage actuelle de votre logement ?</h1>

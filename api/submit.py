@@ -30,12 +30,12 @@ def submit_data():
     print(data)
     data_list = [
         data['chauffage'],
-        data['departement'],
+        data['dateConstruction'],
         data['mail'],
         data['phone'],
         data['surname'],
         data['lastname'],
-        data['revenue']
+
     ]
 
     gc = gspread.service_account_from_dict(credentials_info)
