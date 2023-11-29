@@ -10,6 +10,7 @@ import PartieFin from "./QuestionaireParts/PartieFin";
 
 
 
+
 function QuestionaireTest() {
 
 
@@ -22,6 +23,7 @@ function QuestionaireTest() {
     const [phone, setPhone] = useState('');
     const [surname, setSurname] = useState('');
     const [lastname, setLastname] = useState('');
+    const KOKO = 'api/submit'
     // Ajoutez d'autres états pour les autres parties du questionnaire
 
     // ... vos autres fonctions ...
@@ -42,7 +44,7 @@ function QuestionaireTest() {
 
         // Traitement du formulaire ici (envoi à un serveur, par exemple)
     try {
-            const response = await fetch('http://localhost:5000/submit', {
+            const response = await fetch(KOKO, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -89,16 +91,18 @@ function QuestionaireTest() {
   // ... vos autres fonctions ...
   const handleNextPart = () => {
   setPartieFormulaire(partieFormulaire + 1);
+  document.getElementById('debutForm').scrollIntoView();
   // Ajoutez ici d'autres actions si nécessaire
                                 };
   const handlePreviousPart = () => {
   setPartieFormulaire(partieFormulaire - 1);
+  document.getElementById('debutForm').scrollIntoView();
   // Ajoutez ici d'autres actions si nécessaire
                                 };
 
 
   return (
-    <div>
+    <div id = "debutForm">
       {partieFormulaire === 1 && (
         <PartieDateConstruction
 

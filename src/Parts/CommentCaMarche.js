@@ -1,6 +1,6 @@
 import React from 'react';
 import './CommentCaMarche.css'; // Importez le fichier CSS pour le style
-import img1 from "./../Ressources/ccm_img1.png";
+import img1 from "./../Ressources/test_photo_ccm.png";
 function CommentCaMarche() {
   return (
     <div className="ccm" >

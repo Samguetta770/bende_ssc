@@ -42,20 +42,20 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' ,alignItems:"column"}}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' ,alignItems:"column"}}>
 
             <form className="questionaire" >
                 <ProgressBar step={partieFormulaire} totalSteps={5} />
-                <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+                <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
           <question>
             <h1 >Quelle est l’énergie de chauffage actuelle de votre logement ?</h1>
             <h2>Si vous avez plusieurs énergies de chauffage, indiquez-nous la principale</h2>
-              <div style={{display : 'flex' ,flexDirection : 'row', justifyContent: 'center',paddingTop:'10px'}}>
+              <div style={{display : 'flex' ,textAlign:"center",flexDirection : 'row', justifyContent: 'center',paddingTop:'10px'}}>
 
                   <label className ="option">
 
                         <img className='w-10' src={icone_fioul} alt={"énergie fioul"} />
-                        <p>Chauffage au fioul</p>
+                        <p style={{textAlign:"center"}}>Chauffage au fioul</p>
                         <input
                           type="radio"
                           required
@@ -69,7 +69,7 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
 
                   <label className ="option">
                         <img className='w-10' src={icone_eclair} alt={"énergie bois chauffage bois"}/>
-                        <p>Chauffage électrique</p>
+                        <p style={{justifyContent: 'center',textAlign:"center"}}>Chauffage électrique</p>
                         <input
                           type="radio"
                           required
@@ -83,7 +83,7 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
 
                   <label className ="option">
                         <img className='w-10' src={icone_gaz} alt={"énergie gaz gaziniere chauffage au gaz"} />
-                        <p>Chauffage au gaz</p>
+                        <p style={{textAlign:"center"}}>Chauffage au gaz</p>
                         <input
                           type="radio"
                           required
@@ -102,7 +102,7 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
                     <label className ="option">
 
                           <img className='w-10' src={icone_eau} alt={"énergie bois chauffage au bois cheminé"} />
-                          <p>Chauffage au bois</p>
+                          <p style={{textAlign:"center"}}>Chauffage au bois</p>
                           <input
                             type="radio"
                             required
@@ -116,7 +116,7 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
 
                     <label className ="option">
                           <img className='w-10' src={icone_pac} alt={"énergie pompe a chaleur pompe a chaleur air/eau"}/>
-                          <p>Pompe à chaleur</p>
+                          <p style={{textAlign:"center"}}>Pompe à chaleur</p>
                           <input
                             type="radio"
                             required
@@ -130,7 +130,7 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
 
                     <label className ="option">
                           <img className='w-10' src={icone_charbon} alt={"énergie charbon chauffage au charbon"}/>
-                          <p>Chauffage au charbon</p>
+                          <p style={{textAlign:"center"}}>Chauffage au charbon</p>
                           <input
                             type="radio"
                             required

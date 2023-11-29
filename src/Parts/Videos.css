@@ -1,58 +1,78 @@
 .video-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Espace entre les vidéos */
-  margin: 20px 0; /* Marge autour du conteneur des vidéos */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2vw;
+  flex-wrap: nowrap; /* Empêche le passage à la ligne */
+  margin: 0 auto;
+  padding: 1vw;
+  overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
 }
 
 .video-frame {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Effet d'ombrage */
-  border-radius: 10px; /* Coins arrondis pour un look moderne */
-  overflow: hidden; /* Cache les débordements pour maintenir les coins arrondis */
-}
-
-.bloque{
-  background-color: rgba(255, 255, 255, 0.90); /* Fond transparent */
-    padding: 20px;
-    margin-top: 200px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 20px;
-    border-radius: 40px;
-     /* Centré avec une marge supérieure */
-
-
-    font-size: 20px;
-     /* Utilisation de Flexbox */
-
-    /* Alignement vertical des enfants */
-    width: auto; /* Largeur du conteneur */
-    height: auto; /* Hauteur automatique */
-    text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 25vw; /* Ajustez selon la taille souhaitée */
 
 }
+
+
+.bloque {
+  background-color: rgba(255, 255, 255, 0.90);
+  padding: 1em;
+  margin: 5vh auto;
+  border-radius: 40px;
+  font-size: 1.25rem;
+  width: 95vw;
+  text-align: center;
+}
+
 .bloque h1 {
-     font-family: "Arial Black", sans-serif;
-    font-size: 40px; /* Taille de police pour un gros titre */
-    margin-bottom: 35px; /* Espace en dessous du titre */
-    letter-spacing: 1.8px;
+  font-size: 2.5rem;
+  margin-bottom: 1em;
 }
-.video
-{background-color: rgba(255, 255, 255, 1); /* Fond transparent */
+
+.bloque p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0.5em 0;
+  padding: 0 1em;
+  font-weight: bold;
+}
+.videomami{
+  background-color: rgba(255, 255, 255, 0.70);
+
+
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    flex-wrap: wrap; /* Bonne approche */
+
+  }
+
+  .bloque h1 {
+  font-size: 1.6rem;
 
 }
 
 .bloque p {
+  font-size: 0.8rem;
 
-    font-family: 'Arial', sans-serif; /* Choisissez une police élégante et lisible */
-    color: #333; /* Couleur de texte sombre pour un bon contraste */
-    font-size: 23px; /* Taille de police appropriée pour la lisibilité */
-    font-weight: bold;
-    line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
-    text-align: justify; /* Justifie le texte pour un aspect net */
-    margin: 10px 0; /* Marge au-dessus et en dessous de la description */
-    padding: 0 15px; /* Padding pour ne pas coller aux bords */
 }
+  .bloque{
+    width: 90%;
+  }
 
+  .video-frame {
+    width: 90%; /* Utilisez une largeur maximale plus grande */
+    margin: 0 auto; /* Centre les vidéos dans leur conteneur */
+  }
 
+  .videomami {
+    width: 100%; /* Assurez-vous que le conteneur parent occupe toute la largeur */
+    margin-bottom: 12.5vw;
+  }
+}

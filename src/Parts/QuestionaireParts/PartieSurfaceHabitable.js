@@ -33,11 +33,11 @@ const PartieSurfaceHabitable = ({ handleNextPart, surfaceHabitable,setSurfaceHab
 
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: "50px" }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
             <form className="questionaire" >
                 <ProgressBar step={partieFormulaire} totalSteps={6} />
-                <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+                <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
           <question >
                 <h1 >Quelle est la surface habitable de votre maison ?</h1>
 
@@ -60,7 +60,7 @@ const PartieSurfaceHabitable = ({ handleNextPart, surfaceHabitable,setSurfaceHab
                     />
                 </div>
 
-              <button type="button"
+              <button type="submit"
                       className={"buttonContinue"}
                       onClick={validateAndContinue}
                       disabled={isButtonDisabled}

@@ -15,28 +15,28 @@ const ProgressBar = ({ step, totalSteps }) =>  {
     return (
         <div>
             <div style={{
-                width: '100%',
+                width: '50vw',
                 backgroundColor: '#ddd',
                 borderRadius: '5px',
-                marginBottom: '10px'
+                marginBottom: '0.8em'
             }}>
                 <div
                     style={{
                         width: `${progress}%`,
                         backgroundImage: 'linear-gradient(to right, orange, orangered)',
-                        height: '20px',
+                        height: '1.6em',
                         borderRadius: '5px'
                     }}
                 ></div>
             </div>
             <span style={{
                 display: 'block',
-                fontSize: '12px',
+                fontSize: '0.8em',
                 color: '#666',
                 fontFamily: 'Arial, sans-serif',
                 fontStyle: 'italic',
                 textAlign: 'center',
-                marginTop: '10px'
+                marginTop: '0.8em'
             }}>
                 {message}<br/> Étape {step}/{totalSteps}
             </span>

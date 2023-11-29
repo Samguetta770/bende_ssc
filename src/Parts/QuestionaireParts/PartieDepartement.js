@@ -9,11 +9,15 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
 
 
     const handleDepartementChange = (event) => {
-    setDepartement(event.target.value);
-    if (event.target.value) {
+    let depValue = event.target.value;
 
-    }
-};
+        // Extraire les deux premiers chiffres si la longueur est de 5
+        if (depValue.length === 5) {
+
+        }
+
+        setDepartement(depValue);
+    };
 
     const validateAndContinue = () => {
         if (departement) {
@@ -43,10 +47,10 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
         <form className="questionaire" >
             <ProgressBar step={partieFormulaire} totalSteps={5} />
-            <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+            <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
                   <question >
                         <h1 >Dans quel département se situe le logement concerné par les travaux ?</h1>
                         <h2>Le montant de vos aides peut varier en fonction de votre localisation.</h2>
@@ -80,14 +84,15 @@ const PartieDepartement = ({ departement, setDepartement, handleNextPart ,handle
                                           // Ajoutez ici d'autres styles si nécessaire
                                       }}
                             />
+
                            {departement && (
                                <h4 className="ma-phrase">
                                  La maison à prendre en charge se trouve <span
-                                   className="{departements[departementNum] ? '' : 'departement-non-reconnu'}">{departements[departement] || "dans un département non reconnu"}</span>.
+                                   className="{departements[departementNum] ? '' : 'departement-non-reconnu'}">{departements[departement.substring(0,2)] || "dans un département non reconnu"}</span>.
                                </h4>
                           )}
                         </div>
-                      <button type="button"
+                      <button type="submit"
                       className={"buttonContinue"}
                       onClick={validateAndContinue}
                       disabled={isButtonDisabled}

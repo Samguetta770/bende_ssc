@@ -19,6 +19,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
         if (dateConstruction) {
             // Si la surface est saisie, continuer
             handleNextPart();
+
         } else {
             // Sinon, afficher le message d'erreur
 
@@ -34,20 +35,20 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
 
-            <form id = "debutForm" className="questionaire" >
-                <p style={{fontSize:"31px",color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
+            <form  className="questionaire" >
+                <p className={"pp"} style={{fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
                 <ProgressBar step={partieFormulaire} totalSteps={5} />
                   <question>
 
                         <h1 >Sélectionnez de quand date la construction du logement <br/>concerné par les travaux ?</h1>
-                        <div style={{display : 'flex' ,flexDirection : 'row', justifyContent: 'center',paddingTop:'10px'}}>
+                        <div style={{display : 'flex' ,flexDirection : 'row', justifyContent: 'center',paddingTop:'1vw'}}>
 
                               <label className ="option">
 
                                     <img className='w-10' src={img1} alt ="date de la maison économie d'énergie pompe a chaleur"/>
-                                    <p>Moins de 2 ans</p>
+                                    <p2 style={{textAlign:"center",fontWeight: "bold" }}>Moins de 2 ans</p2>
                                     <input
                                       type="radio"
                                       name={"ageMaison"}
@@ -62,7 +63,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
                               <label className ="option">
                                     <img className='w-10' src={img1} alt={"aide état économie d'énergie pompe a chaleur devis gratuit"}/>
-                                    <p>Entre 2 ans et 15 ans</p>
+                                    <p2 style={{textAlign:"center",fontWeight: "bold" }}>Entre 2 ans et 15 ans</p2>
                                     <input
                                       type="radio"
                                       name={"ageMaison"}
@@ -76,7 +77,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
                               <label className ="option">
                                     <img className='w-10' src={img1} alt={"pompe a chaleur panneaux solaire aide gouvernement réduction"}/>
-                                    <p>Plus de 15 ans</p>
+                                    <p2 style={{textAlign:"center",fontWeight: "bold" }}>Plus de 15 ans</p2>
                                     <input
                                       type="radio"
                                       value="Plus de 15 ans"
@@ -98,6 +99,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
                             backgroundColor: isButtonDisabled ? '#ccc' : '', // Grisé si désactivé
                             // Autres styles
                                  }}
+
                        >Continuer</button>
                   </question>
             </form>

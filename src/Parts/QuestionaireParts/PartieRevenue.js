@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Questionaire.css'
-import img1 from "../../Ressources/+50K image.png";
+import img1 from "../../Ressources/50Kimage.png";
 import img2 from "../../Ressources/25K_50K image.png";
 import img3 from "../../Ressources/25Kimage.png";
 import ProgressBar from "../../Ressources/ProgressBar";
@@ -42,12 +42,12 @@ const PartieRevenue = ({ revenue,setRevenue, handleNextPart ,handlePreviousPart,
 
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', paddingTop: '50px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
 
             <form className="questionaire" >
                 <ProgressBar step={partieFormulaire} totalSteps={6} />
 
-                <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+                <button type="button" className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
           <question>
             <h1 >À combien s'élève le revenu total de votre foyer fiscal ?</h1>
               <h2>Le revenu fiscal de référence est utilisé pour calculer le montant de vos aides au plus juste.</h2>
@@ -56,7 +56,7 @@ const PartieRevenue = ({ revenue,setRevenue, handleNextPart ,handlePreviousPart,
                   <label className ="option">
 
                         <img className='w-11' src={img3} alt={"revenue précaire"}/>
-                        <p>Moins de 25 000 €</p>
+                        <p style={{textAlign:"center",fontWeight: "bold" }}>Moins de 25 000 €</p>
                         <input
                           type="radio"
                           name={"revenue"}
@@ -71,7 +71,7 @@ const PartieRevenue = ({ revenue,setRevenue, handleNextPart ,handlePreviousPart,
 
                   <label className ="option">
                         <img className='w-11' src={img2} alt={"revenue normal imposition "}/>
-                        <p>Entre 25 000 € et 50 0000 €</p>
+                        <p style={{textAlign:"center",fontWeight: "bold" }}>Entre 25 000 € et 50 0000 €</p>
                         <input
                           type="radio"
                           name={"revenue"}
@@ -85,7 +85,7 @@ const PartieRevenue = ({ revenue,setRevenue, handleNextPart ,handlePreviousPart,
 
                   <label className ="option">
                         <img className='w-11' src={img1} alt={"revenue classique argent "} />
-                        <p>Plus de 50 000 €</p>
+                        <p style={{textAlign:"center",fontWeight: "bold" }}>Plus de 50 000 €</p>
                         <input
                           type="radio"
                           value="Plus de 50K ans"

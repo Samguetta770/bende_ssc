@@ -1,5 +1,5 @@
 .progressBar {
-    height: 20px;
+    height: 17vw;
     background-image: linear-gradient(to right, orange, #FF6A00 );
     border-radius: 5px;
 }
