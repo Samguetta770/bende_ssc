@@ -75,7 +75,7 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
 
             <form className="questionaire" >
             <ProgressBar step={partieFormulaire} totalSteps={3} />
-            <button className = "buttonReturn" onClick={handlePreviousPart}>← Retour</button>
+            <button className = "buttonReturn" type={"button"} onClick={handlePreviousPart}>← Retour</button>
           <question >
                 <h1 >Coordonnées de Contact </h1>
                 <h2>Pour garantir un suivi personnalisé et sécurisé, nous avons besoin de vos coordonnées de contact.</h2>
