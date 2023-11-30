@@ -126,7 +126,6 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
                                   // Ajoutez ici d'autres styles si nécessaire
                               }}
                     />
-                     <p id="message-erreur" style={{color: "red"}}></p>
                 </div>
 
 
