@@ -22,7 +22,7 @@ function App() {
        <Analytics/>
        <CommentCaMarche/>
        <CombienCaCoute/>
-       <Temoignage/>
+
        <Videos/>
        <FinDePage/>
        <PartenaireSection/>
