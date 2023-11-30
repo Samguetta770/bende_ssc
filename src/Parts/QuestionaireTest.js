@@ -43,7 +43,7 @@ function QuestionaireTest() {
         console.log(formObject);
 
         // Traitement du formulaire ici (envoi à un serveur, par exemple)
-    try {
+        try {
             const response = await fetch(KOKO, {
                 method: 'POST',
                 headers: {
@@ -65,23 +65,25 @@ function QuestionaireTest() {
         }
 
         console.log(formObject);
-    document.getElementById('debutForm').scrollIntoView();
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-11421461091";
-    document.head.appendChild(script);
+        document.getElementById('debutForm').scrollIntoView();
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=AW-11421461091";
+        document.head.appendChild(script);
 
-    script.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'AW-11421461091');
-};
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+            gtag('config', 'AW-11421461091');
+        };
 
 
-
-
-
+    }
 
 
 
