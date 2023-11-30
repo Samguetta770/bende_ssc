@@ -56,7 +56,7 @@ const PartieDateConstruction = ({ dateConstruction, setDateConstruction ,handleN
 
 
             <form  className="questionaire" >
-                <p className={"pp"} style={{fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire pour vérifier si vous pouvez bénéficier des aides pour obtenir un système solaire combiné pour 1 € symbolique !</p>
+                <p className={"pp"} style={{fontWeight: "bold" ,color:"darkblue",textAlign:"center"}}>Remplissez notre formulaire <span className={"text-orange"} style={{color:"orangered"}}>en moins d'1 minute</span> et vérifiez si vous êtes éligibles.</p>
                 <ProgressBar step={partieFormulaire} totalSteps={3} />
                   <question>
 

@@ -1,3 +1,25 @@
+.bloque {
+  background-color: rgba(255, 255, 255, 0.90);
+  padding: 1em;
+  margin: 5vh auto;
+  border-radius: 40px;
+  font-size: 1.25rem;
+  width: auto;
+  text-align: center;
+}
+
+.bloque h1 {
+  font-size: 2.5rem;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+    text-align: start;
+}
+.bloque h4{
+    text-align: start;
+    font-weight: normal;
+}
+
+
 .temoignage-container {
   display: flex;
   justify-content: space-between;
@@ -9,40 +31,37 @@
   overflow-x: auto; /* Permet le défilement horizontal si nécessaire */
 }
 
-.video-frame {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 25vw; /* Ajustez selon la taille souhaitée */
-
-}
-
-
-.bloque {
-  background-color: rgba(255, 255, 255, 0.90);
-  padding: 1em;
-  margin: 5vh auto;
-  border-radius: 40px;
-  font-size: 1.25rem;
-  width: 95vw;
-  text-align: center;
-}
-
-.bloque h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1em;
-}
-
-.bloque p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: justify;
-  margin: 0.5em 0;
-  padding: 0 1em;
-  font-weight: bold;
-}
 .temoignagemami{
-  background-color: rgba(255, 255, 255, 0.70);
+  background-color: rgba(255, 255, 255, 0.50);
+    width: 30%;
+
+}
+
+.avis-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nom-utilisateur{
+    font-weight: bold;
+    margin-right: auto;
+    font-size: 1.6vw;
+}
+
+
+
+
+
+.texte-avis {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0.5em 0;
+    padding: 0 1em;
+    margin-top: 10px;
+     /* Met le texte en italique */
 
 
 }

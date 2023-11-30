@@ -16,7 +16,7 @@ function CombienCaCoute() {
             <p>
                 <strong>Le saviez-vous ? </strong>Grâce à la Prime Effy (CEE) et à MaPrimeRénov’, vous pouvez payer vos travaux quasi gratuitement !<br/> En effet, si vous êtes éligible à ce programme d'état, ce projet pourrait être intégralement financé et vous revenir à un reste à charge d'1 € symbolique !<br/><strong>Faites une simulation gratuite en 2 minutes !</strong>
             </p>
-            <button className={"buttonContinue"} onClick={() => document.getElementById('debutForm').scrollIntoView()}>Vérifiez si vous pouvez bénéficier du système solaire combiné à 1 €</button>
+            <button className={"buttonContinue"} onClick={() => document.getElementById('debutForm').scrollIntoView()}>Effectuez votre devis gratuitement !</button>
         </div>
 
     </div>
