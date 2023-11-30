@@ -11,6 +11,7 @@ import FinDePage from "./Parts/FinDePage";
 import PartenaireSection from "./Parts/PartenaireSection";
 
 import { Analytics } from '@vercel/analytics/react';
+import Temoignage from "./Parts/Temoignage";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
        <Analytics/>
        <CommentCaMarche/>
        <CombienCaCoute/>
-
+       <Temoignage/>
        <Videos/>
        <FinDePage/>
        <PartenaireSection/>
