@@ -9,9 +9,8 @@ import PartieContact from "./QuestionaireParts/PartieContact";
 import PartieFin from "./QuestionaireParts/PartieFin";
 
 
-
-
 function QuestionaireTest() {
+
 
 
 
@@ -81,6 +80,7 @@ function QuestionaireTest() {
             gtag('js', new Date());
             gtag('config', 'AW-11421461091');
         };
+
 
 
     }

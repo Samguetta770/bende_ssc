@@ -2,6 +2,8 @@ import React from 'react';
 import './CommentCaMarche.css'; // Importez le fichier CSS pour le style
 
 function FinDePage() {
+
+
   return (
     <div className="fdp" >
 

@@ -41,6 +41,8 @@ const PartieEnergieChauffage = ({ setChauffage, chauffage ,handlePreviousPart,ha
 
 
 
+
+
     return (
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' ,alignItems:"column"}}>
 

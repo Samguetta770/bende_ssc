@@ -3,6 +3,11 @@ import React from 'react';
 import '../Questionaire.css'
 import ProgressBar from "../../Ressources/ProgressBar";
 
+
+
+
+
+
 const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePreviousPart, partieFormulaire,surname,setSurname, lastname,setLastname,handleSubmit}) => {
 
 
@@ -50,6 +55,10 @@ const PartieContact = ({ mail,setMail,phone,setPhone,handleNextPart ,handlePrevi
 
         }
     };
+
+
+
+
 
 
 

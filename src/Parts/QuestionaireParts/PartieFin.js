@@ -3,6 +3,23 @@ import '../Questionaire.css'
 
 
 const PartieFin =(partieFormulaire)=>{
+
+    const script = document.createElement('script');
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=AW-11421461091";
+        document.head.appendChild(script);
+
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                window.dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+            gtag('config', 'AW-11421461091');
+        };
+
     return (
         <div >
             <div className={"questionaire"} style={{height:"auto"}}>
